@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b43ac219f463b4d8da8a093b4135b37d, type: 3}
+  m_Name: TappxSettings
+  m_EditorClassIdentifier: 
+  testEnabled: 0
+  sceneListEnabled: 1
+  bannerSceneIndex: 00000000000000
+  interstitialSceneIndex: 00000000000100
+  mrecSceneIndex: 00000000000000
+  sceneIndex: 00000000000100
+  interstitialAutoShow: 00000000000000
+  positionSceneIndex: 01000000010000000100000001000000010000000100000001000000
+  iOSTappxID: 
+  androidTappxID: /120940746/Pub-28413-Android-4103

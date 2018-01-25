@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tappx.sdk.android"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true" >
+        <activity
+            android:name="com.tappx.sdk.android.AdActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="com.tappx.sdk.android.InterstitialAdActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            />
+        <activity
+            android:name="com.tappx.sdk.android.VideoAdActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+
+        <receiver android:name="com.tappx.sdk.android.TappxBroadcastReceiver" >
+            <intent-filter android:priority="999" >
+                <action android:name="com.tappx.sdk.SILP" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.tappx.sdk.android.TrackInstallIntentService" />
+        
+    </application>
+
+</manifest>
